@@ -1,7 +1,9 @@
-name: Deploy to AWS S3
+name: Deploy to AWS S3 (Prod)
 
 on:
-  push:
+  pull_request
+    types:
+      - closed
     branches:
       - prod
 
